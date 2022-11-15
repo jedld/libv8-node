@@ -22,9 +22,6 @@ target_platform="${TARGET_PLATFORM:-${1:-}}"
 target_platform="${target_platform:-${host_platform}}"
 
 case "${target_platform}" in
-    x86_64*-linux-musl)
-        RUBY_TARGET_PLATFORM='x86_64-linux-musl'
-        ;;
     x86_64*-linux-*)
         RUBY_TARGET_PLATFORM='x86_64-linux'
         ;;
